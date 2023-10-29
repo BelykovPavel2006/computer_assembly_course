@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru-ru" m_init="2233643202211221713">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="script/script.js"></script>
+	<link rel="stylesheet" href="style/style.css">
+	<title>Computer_assembly_course</title>
+	<style>
+		
+		body{
+			background-image: url(img/bgc.png);
+		}
+		header{
+			background-image: url(img/abstract-uv-ultraviolet-light-composition.jpg);
+		}
+		.course{
+			background-image: url(img/09762af2dfa39fe06960ff5330fd0265.gif);
+		}
+		.down_arrow{
+			width: 40%;
+			margin-left: 45%;
+			margin-right: -45%;
+			margin-bottom: 2%;
+			margin-top: 2%;
+		}
+		
+		
+		.rov_partners{
+			background-image: url(img/logo.png);
+		}
+		
+.popup{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(1, 1, 1, 0.8);
+			top:0;
+			left: 0;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.popup:target{
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.popup_body{
+			min-height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+		.popup_content{
+			width: 15%;
+			position: relative;
+		}
+		
+
+		.popup_area{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top:0;
+			left:0;
+		}
+
+		.popup_form{
+			width: 300px;
+
+		}
+
+     .form_popup{
+		width: 300px;
+		 border-radius: 10%;
+       padding: 40px 20px;
+		text-align: center;
+		background-color: #808080;
+    
+
+}
+
+ .form_popup label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form_popup input{
+    display: block;
+    height: 43px;
+    width: 100%;
+    color:#fff;
+    border-radius: 20%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    border: none;
+    box-shadow: inset 2px 2px 5px #000,
+              inset -5px -5px 10px #ffffff;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.form_popup h3{
+	font-size: 16px;
+}
+::placeholder{
+    color: #4b4e4d;
+    padding-left: 10px;
+}
+
+.button_popup{
+  width: 100%;
+  margin-top: 35px;
+  padding: 12px;
+  background: #696969;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 32px;
+ box-shadow: -4px -4px 7px #fffdfdb7,
+                3px 3px 5px rgba(94, 104, 121, 0.388);
+}
+.button_popup:hover{
+ box-shadow: inset -3px -3px 7px #ffffffb0, 
+       inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+}
+	</style>
+</head>
+<body >
+	<header >
+		
+			<menu class=" menu flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 mb-2 ">
+				<logo class="col-md-3 mb-1 mb-md-0"><span class="span"><h1>L</h1></span></logo>
+				<links class=" col-2 col-md-auto mb-2 justify-content-center mb-md-0">
+					<a href="#">Главная</a>
+					<a href="#matter">Курсы</a>
+					<a href="#popup">Расписание</a>
+					<a href="#teachers">Преподаватели</a>
+					<a href="#articles">Рассылка</a>
+					<a href="#social_networks">Сотсети</a>
+				</links>
+				<registration class="col-md-2 text-end">
+					<button onclick="window.location.href = '#popup';" style=" color: #fff;" class="button" >Зайти в кабинет</button>
+				</registration>	
+			</menu>
+			
+			<heading class="heading">
+				<div class="head">
+					<h1>Первый курс</br> по компьютерной сборке</h1>
+				</div>
+
+				<div class="namber">
+					<div class="timer">
+ 					 <div class="timer__items">
+   					 <div class="timer__item timer__days">00</div>
+   					 <div class="timer__item timer__hours">00</div>
+  							  <div class="timer__item timer__minutes">00</div>
+   					 <div class="timer__item timer__seconds">00</div>
+ 					</div>
+					</div>
+				</div>	
+			</heading>
+
+		
+	</header>
+      <div   class="course">
+			<div style="float: left;" class="course1">
+				<button onclick="window.location.href = '#popup';" style=" color: #fff;" class="cours">Заказать курс</button>
+			</div>
+
+			<div style="float: left; " class="participants">
+				<div class="participants_text">
+					<h4>Учеников всего:</h4>
+					<p class="pi">200</p>
+				</div>
+
+				<div class="finished">
+					<h4>успешно закончили курс:</h4>
+					<p class="pi" >190</p>
+				</div>
+			</div>
+
+			<div style="float: left;" class="analytics">
+				<div class="analytics_text">
+					<h4 style="float:left;">Заработано учениками:</h4>
+					<p>400 000₽</p>
+				</div>
+
+				<div class="">
+					<div class="" id=" cors"></div>
+				</div>
+			</div>
+		</div>
+
+	<div class="content">
+
+		<div id="matter" class="matter d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+			<div class="img_matter">
+				<div class="span_matter">
+				<img width="400px" height="400" src="img/image.png"> 
+				</div>
+
+			</div>
+
+			<div class="subject_matter">
+				<h3>Чем мы занимаемся</h3>
+
+				<p>Основная цель курса - дать слушателю необходимые навыки по сборке персонального компьютера:<br> производить установку компонентов ПК, монтировать систему охлаждения, <br> а также ознакомить слушателя с правилами электростатической безопасности.</p>
+			</div>
+		</div>
+
+		<div class="start">
+			<h3>Быстрый старт</h3>
+			<h5>Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</h5>
+		</div>
+
+		<div class="skills  d-flex flex-column flex-md-row p-4  py-md-5 align-items-center justify-content-center">
+			<div class="skil">
+				<h3>100%</h3>
+				<div class="span_skil"></div>
+				<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Netus eget velit <br>quisque accumsan amet tortor. Velit, volutpat egestas<br> fringilla mi porttitor tempus. Placerat dui.</p>
+			</div>
+
+			<div class="skil">
+				<h3>75%</h3>
+				<div class="span_skil2"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Netus eget velit<br> quisque accumsan amet tortor. Velit, volutpat egestas<br> fringilla mi porttitor tempus. Placerat dui.</p>
+			</div>
+
+			<div class="skil">
+				<h3>50%</h3>
+				<div class="span_skil3"></div>
+				<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Netus eget velit quisque<br> accumsan amet tortor. Velit, volutpat egestas<br> fringilla mi porttitor tempus. Placerat dui.</p>
+			</div>
+
+			<div class="skil">
+				<h3>Итог</h3>
+				<div class="span_skil4"></div>
+				<p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Netus eget<br> velit quisque accumsan amet tortor. Velit, volutpat egestas<br> fringilla mi porttitor tempus. Placerat dui.</p>
+			</div>
+		</div>
+     <div class="down_arrow">
+     	<img width="180" src="img/i-cHXAFXjtu-transformed.png" alt="">
+     </div>
+		<div class="prof">
+			
+			<div class="heading_prof">
+				<h3>Получите профессию прямо сейчас</h3>
+			</div>
+		<div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+			<div style="text-align: center;" class="rov_prof">
+				<img  src="img/icon-1.svg" alt="">
+				<h5>Только практические<br>навыки в работе</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Netus eget velit quisque accumsan amet tortor. Velit,<br> volutpat egestas fringilla mi porttitor tempus. Placerat dui.	</p>
+			</div>
+
+			<div style="text-align: center;" class="rov_prof">
+				<img  src="img/icon-2.svg" alt="">
+				<h5>Работа на самом<br>современном оборудовании</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Netus eget velit quisque accumsan amet tortor. Velit,<br> volutpat egestas fringilla mi porttitor tempus. Placerat dui.	</p>
+			</div>
+
+			<div style="text-align: center;" class="rov_prof">
+				<img  src="img/icon-3.svg" alt="">
+				<h5>Сертификация<br>по окончании обучения</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Netus eget velit quisque accumsan amet tortor.<br> Velit, volutpat egestas fringilla<br> mi porttitor tempus. Placerat dui.</p>
+			</div>
+		</div>
+		</div>
+
+		<div class="partners">
+               
+			<div class="heading_partners">
+				<h3>Партнеры - топовые бренды</h3>
+			</div>
+
+			<div class="d-flex flex-column flex-md-row p-4  py-md-5 align-items-center justify-content-center">
+				<div class="rov_partners">
+					<img style="color: #fff;" src="img/logo.png" alt="">
+				</div>
+
+				<div class="rov_partners">
+					<img src="img/logo.png" alt="">
+				</div>
+
+				<div class="rov_partners">
+					<img src="img/logo.png" alt="">
+				</div>
+
+				<div  class="rov_partners">
+					<img src="img/logo.png" alt="">
+				</div>
+
+				
+
+			</div>
+
+		</div>
+
+		<div class="training">
+			<div class="heading_training">
+				<h2>Программа обучения</h2>
+				<p>	Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
+			</div>
+
+			<div class="carousel_training">
+					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+  </div>
+  <div class="carousel-inner inn_training">
+    <div  class="carousel-item active">
+     
+      <div  class="text_item">
+      	<p>Неделя №1</p>
+      	<h3>Красивая часть курса,<br>
+которая помогает в успехе</h3>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      
+      <div  class="text_item">
+      	<p>Неделя №2</p>
+      	<h3>Красивая часть курса,<br>
+которая помогает в успехе</h3>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+     
+      <div  class="text_item">
+      	<p>Неделя №3</p>
+      	<h3>Красивая часть курса,<br>
+которая помогает в успехе</h3>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      
+      <div  class="text_item">
+      	<p>Неделя №4</p>
+      	<h3>Красивая часть курса,<br>
+которая помогает в успехе</h3>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      
+      <div  class="text_item">
+      	<p>Неделя №5</p>
+      	<h3>Красивая часть курса,<br>
+которая помогает в успехе</h3>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      
+      <div  class="text_item">
+      	<p>Неделя №6</p>
+      	<h3>Красивая часть курса,<br>
+которая помогает в успехе</h3>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      
+      <div  class="text_item">
+      	<p>Неделя №7</p>
+      	<h3>Красивая часть курса,<br>
+которая помогает в успехе</h3>
+      </div>
+    </div>
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+
+        <div id="teachers" class="teachers">
+
+        	<div class="heading_teachers">
+        		<h3>Ваши преподаватели</h3>
+        	</div>
+
+        	<div class="  d-flex flex-column flex-md-row p-4  py-md-5 align-items-center justify-content-center ">
+        		<h1> В Разработке ;)</h1>
+        	</div>
+
+        </div>
+
+			</div>
+
+	<footer class="footer">
+		<div id="articles" class="articles">
+			<h2>Статьи каждую неделю</h2>
+			<p>Больше 90% учеников прошли полный курс и <br>смогли собрать свой первый компьютер</p>
+		</div>
+
+		<div class="search">
+			<form  action="" method="get">
+  			<input class="form_search" name="s" placeholder="E-mail" type="search">
+ 			 <button onclick="window.location.href = '#popup';" class="form_search" type="submit">Подписаться</button>
+			</form>
+		</div>
+
+		<div class="social_networks " id="social_networks">
+			  
+		      <div class="social_networks_icons d-flex flex-column flex-md-row p-4  py-md-5 align-items-center justify-content-center">
+		      		
+
+		      		<div class="social vk">
+    				<a href="https://vk.com/al_im.php?sel=c1" target="_blank"><i class="fa fa-vk fa-2x"><img width="30px" style="margin-top: 3%;" src="https://static.tildacdn.com/tild6562-3734-4736-b861-633864393934/41-413097_download-f.png" alt=""></i></a>    
+					</div>
+
+					<div class="social youtube">
+    				<a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube fa-2x"><img width="30px" style="margin-top: 3%;" src="https://100tails.ru/wp-content/uploads/2022/06/red-youtube-logo-png-xl.png" alt=""></i></a>
+					</div>
+
+					<div class="social facebook">
+    				<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-2x"><img width="30px" src="https://www.svgrepo.com/show/10580/facebook.svg" alt=""></i></a>    
+					</div>
+
+					<div class="social instagram">
+    				<a href="https://instagram.en.softonic.com" target="_blank"><i class="fa fa-instagram fa-2x"><img width="30px" src="https://e1.pngegg.com/pngimages/209/911/png-clipart-macos-app-icons-instagram.png" alt=""></i></a>
+					</div>
+
+
+		      	</div>
+		      <div class="social_networks_text">
+		      	<p style="font-size: 20px;">Templates #18. More on Figma.info</p>
+		      </div>
+		</div>
+	</footer>
+		<div id="popup" class="popup">	
+			<div class="popup_body">
+				<a href="#cors" class="popup_area"></a>
+				 <div class="popup_content">
+				 	
+				 	<div class="popup_form">
+            
+				 		<form class="form_popup" >
+				 			<h3>Зарегистрироваться</h3>
+            <label for="username">Username</label>
+            <input type="text" placeholder="Email or Phone" id="username">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+
+             <button class="button_popup">Log In</button>
+
+            </form>
+				 	</div>
+				 </div>
+				</div>
+				</div>
+		</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
